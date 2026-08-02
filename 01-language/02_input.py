@@ -1,0 +1,10 @@
+name = input("Enter your name: ")
+age = int(input("Enter your age: "))
+print(type(age))
+city = input("Enter your city: ")
+favourite_language = input("Enter your favourite programing language: ")
+
+print(f"Name: {name.title()}")
+print(f"Age: {age}")
+print(f"City: {city.capitalize()}")
+print(f"Favourite Programing Language: {favourite_language.capitalize()}")
