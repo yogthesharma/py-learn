@@ -1,3 +1,19 @@
+"""
+Lists
+
+Ordered, mutable sequences: `[1, 2, 3]`. Index from 0; negative indices
+from the end.
+
+Mutate in place: `.append()`, `.insert()`, `.remove()`, `.pop()`, `.extend()`.
+Copy with `.copy()` or `list(x)` — assignment `b = a` shares the same list.
+
+Use for collections that grow, shrink, or reorder (queues of work, lines
+in a file, tags on a post).
+
+Gotcha: `b = a` is not a copy; mutating `b` changes `a` too unless you
+copied explicitly.
+"""
+
 # challange 1
 
 languages = ["python", "rust", "go"]

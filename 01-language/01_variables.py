@@ -1,3 +1,16 @@
+"""
+Variables
+
+Names that point at values in memory. Python figures out the type from
+what you assign — no `int x` declarations.
+
+Use f-strings (`f"{name}"`) for readable output; `.capitalize()` / `.title()`
+format strings without changing the stored value.
+
+Gotcha: reassigning a name binds it to a new value; it does not mutate
+the old object unless the object itself is mutable (lists, dicts, etc.).
+"""
+
 name = "Yog Sharma"
 age = 26
 expirence = 6

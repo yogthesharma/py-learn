@@ -1,3 +1,19 @@
+"""
+List Comprehensions
+
+Build a list in one expression: `[expr for item in iterable if condition]`.
+Often clearer and faster than a manual loop + `.append()`.
+
+Optional filter (`if number % 2`), transform (`number ** 2`), or ternary
+(`"even" if n % 2 == 0 else "odd"`).
+
+Use when mapping or filtering a sequence into a new list; prefer a plain
+loop when side effects or multi-step logic dominate.
+
+Gotcha: keep comprehensions readable — nested or very long ones are
+harder to debug than a `for` loop.
+"""
+
 # challange 1
 numbers = [number for number in range(1, 6)]
 

@@ -1,3 +1,10 @@
+"""
+Package entry script
+
+Demonstrates importing from a nested package: `utils.calculator` and
+`utils.string_utils`. Run from the `packages/` directory.
+"""
+
 from utils.calculator import add
 from utils.string_utils import to_lower
 

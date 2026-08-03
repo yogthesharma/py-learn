@@ -1,3 +1,17 @@
+"""
+Functions
+
+Define reusable blocks with `def name():`. Call with `name()`.
+`return` sends a value back; omitting `return` gives `None`.
+
+Functions can return multiple values as a tuple: `return a, b`.
+
+Use to name behavior, avoid duplication, and test logic in isolation.
+
+Gotcha: `print()` inside a function displays output but does not return
+a value — callers get `None` unless you `return` something.
+"""
+
 # Challange 1
 
 

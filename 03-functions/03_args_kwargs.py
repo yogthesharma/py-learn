@@ -1,3 +1,18 @@
+"""
+*args and **kwargs
+
+`*args` collects extra positional arguments as a tuple.
+`**kwargs` collects extra keyword arguments as a dict.
+
+Signature order: positional, `*args`, keyword-only, `**kwargs`.
+Call with `func(**dict)` to expand a dict into keyword args.
+
+Use when arity is variable (logging, wrappers, forwarding to another API).
+
+Gotcha: names `*args` / `**kwargs` are convention — the stars matter,
+not the identifiers.
+"""
+
 # Challenge 1
 def total(*numbers):
     sum = 0

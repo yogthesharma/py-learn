@@ -1,3 +1,18 @@
+"""
+Nested Loops
+
+A loop inside another loop: outer controls rows, inner controls columns
+(grids, patterns, matrices).
+
+`print(x, end="")` suppresses newline; call bare `print()` after an inner
+loop for a new line. Walk 2D data with `for row in matrix: for cell in row`.
+
+Use for tables, ASCII art, comparing every pair, or coordinate-style logic.
+
+Gotcha: complexity grows as outer × inner — fine for small grids; for
+large data prefer vectorized libraries or smarter algorithms.
+"""
+
 # Challange 1
 
 for row in range(4):

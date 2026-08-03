@@ -1,3 +1,19 @@
+"""
+Decorators Intro
+
+Functions are first-class: assign them, pass them, return them from other
+functions. Closures capture variables from the enclosing scope.
+
+A decorator wraps a function: `wrapper` runs before/after the original.
+Manual: `greet = decorator(greet)`. Sugar: `@decorator` above `def`.
+
+Use for cross-cutting behavior (logging, timing, auth) without changing
+every call site.
+
+Gotcha: `@decorator` replaces the function object — use `functools.wraps`
+(later lesson) to preserve `__name__` and docstrings.
+"""
+
 # Challenge 1
 
 

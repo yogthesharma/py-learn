@@ -1,3 +1,18 @@
+"""
+Dictionaries
+
+Key–value maps: `{"name": "Yog", "age": 25}`. Keys are unique; lookup
+by key, not position.
+
+Access: `d["key"]` raises KeyError if missing; `d.get("key", default)` is
+safer. Iterate with `.items()` for key and value together.
+
+Use for records, configs, caches, and counting (key → count).
+
+Gotcha: `d["missing"]` crashes; prefer `.get()` or check `key in d` when
+the key might not exist.
+"""
+
 # Challange 1
 
 student = {"name": "Yog", "age": 25, "course": "python"}

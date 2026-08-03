@@ -1,10 +1,29 @@
 """
 Dataclasses
 
-For classes that are mostly data (DTOs, config, responses),
-@dataclass generates __init__, __repr__, and __eq__ for you.
+@dataclass generates __init__, __repr__, and __eq__ from type-annotated
+fields — ideal for classes that are mostly data (DTOs, config, API responses).
 
-Use a normal class when behavior (methods) is the main focus.
+Key syntax:
+  @dataclass
+  class User:
+      name: str
+      age: int = 18
+      tags: list[str] = field(default_factory=list)
+
+Important:
+  Never use mutable defaults directly (items: list = []) — all instances
+  share the same object. Use field(default_factory=list) instead.
+  Type hints guide code generation; Python does not enforce them at runtime.
+
+Options you'll see:
+  frozen=True       — immutable instances (config, hashable keys)
+  order=True        — generate comparison methods (<, >, ...)
+  field(repr=False) — hide sensitive fields from __repr__
+  __post_init__     — custom logic after the generated __init__
+
+Use @dataclass for typed bags of fields. Use a normal class when behavior
+(deposit/withdraw, validation, complex invariants) is the main focus.
 """
 
 from dataclasses import dataclass, field

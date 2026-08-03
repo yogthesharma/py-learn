@@ -1,3 +1,19 @@
+"""
+Inheritance
+
+Subclass extends a parent: `class Car(Vehicle)`. Child gets parent methods
+and can override them (`start`) or add new ones (`honk`).
+
+`super().__init__(...)` runs the parent's constructor before setting
+child-specific attributes.
+
+Use when types share behavior but differ in details (Vehicle → Car,
+Shape → Rectangle).
+
+Gotcha: overriding replaces the parent method entirely — call `super()`
+when you still need parent setup or behavior.
+"""
+
 class Vehicle:
     def __init__(self, brand, speed):
         self.brand = brand

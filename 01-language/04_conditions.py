@@ -1,3 +1,18 @@
+"""
+Conditions
+
+Branch with `if`, `elif`, `else`. Indentation (4 spaces) defines blocks —
+not braces.
+
+Combine checks with `and` / `or`. Use `==` for equality; `=` is assignment.
+
+Use when logic depends on user input, thresholds, or flags (login,
+discount tiers, eligibility).
+
+Gotcha: empty collections and zero are falsy, but prefer explicit
+comparisons (`age >= 18`) for readability.
+"""
+
 # Challange 1
 
 age = int(input("Please provide your age: "));

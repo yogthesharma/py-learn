@@ -1,3 +1,18 @@
+"""
+Parameters
+
+Positional args match in order: `greet(name)`. Default values:
+`def f(city="Gurugram")` — defaults apply when the arg is omitted.
+
+Defaults are evaluated once at definition time; avoid mutable defaults
+like `def f(items=[])` — use `None` and create inside the body.
+
+Use defaults for optional settings; required args first, optional after.
+
+Gotcha: `add(5)` uses `b=10` from the default; overriding requires
+passing both positionally or by keyword.
+"""
+
 # Challange 1
 def greet(name):
     print(f"Hello {name}")

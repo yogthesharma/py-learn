@@ -1,3 +1,18 @@
+"""
+Unpacking
+
+Split iterables into variables: `first, *middle, last = numbers` — `*`
+captures the rest as a list.
+
+Spread into new collections: `[*a, *b]` merges lists; `{**d1, **d2}` merges
+dicts (later keys overwrite earlier ones).
+
+Use when splitting head/tail, combining configs, or forwarding arguments.
+
+Gotcha: `{**a, **b}` with duplicate keys keeps the right-hand value —
+order matters when merging dicts.
+"""
+
 # challange 1
 
 numbers = [1, 2, 3, 4, 5]

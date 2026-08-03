@@ -1,3 +1,16 @@
+"""
+Input
+
+`input()` always returns a string — even when the user types digits.
+Cast with `int()`, `float()`, etc. before doing math.
+
+Use `input()` for interactive scripts and small CLI tools; for anything
+non-interactive prefer config files, env vars, or command-line args.
+
+Gotcha: invalid casts (e.g. `int("abc")`) raise ValueError; validate or
+wrap in try/except when input is untrusted.
+"""
+
 name = input("Enter your name: ")
 age = int(input("Enter your age: "))
 print(type(age))

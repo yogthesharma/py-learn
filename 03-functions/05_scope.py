@@ -1,3 +1,19 @@
+"""
+Scope
+
+LEGB: Local → Enclosing → Global → Built-in. Assignment inside a function
+creates a local name unless declared `global` or `nonlocal`.
+
+Reading an enclosing name works; rebinding it in an inner function needs
+`nonlocal`. Locals vanish when the function returns.
+
+Use nested functions for helpers that need enclosing state; avoid
+`global` except for small scripts.
+
+Gotcha: `count += 1` inside a function makes `count` local — it does not
+update the outer variable without `nonlocal`/`global`.
+"""
+
 # Challenge 1
 
 name = "Yog"

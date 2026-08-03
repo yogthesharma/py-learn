@@ -1,3 +1,19 @@
+"""
+Enumerate and Zip
+
+`enumerate(iterable, start=0)` yields `(index, item)` — avoid manual
+counters when you need both.
+
+`zip(a, b, ...)` pairs elements until the shortest iterable ends; wrap
+in `list()` to materialize.
+
+Use `enumerate` for numbered lists; `zip` for parallel columns (names +
+scores, keys + values from two lists).
+
+Gotcha: `zip` stops at the shortest input — unequal lengths silently drop
+extra items unless you use `zip(..., strict=True)` (3.10+).
+"""
+
 # challange 1
 fruits = ["Apple", "Banana", "Mango"]
 

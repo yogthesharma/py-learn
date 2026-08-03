@@ -1,3 +1,10 @@
+"""
+String utilities submodule (packages lesson)
+
+Small string helpers (`to_upper`, `to_lower`) consumed by `main.py`
+via `from utils.string_utils import to_lower`.
+"""
+
 def to_upper(a: str):
     return a.upper()
 

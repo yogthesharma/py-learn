@@ -1,3 +1,19 @@
+"""
+Polymorphism
+
+Different classes share an interface (e.g. `.area()`) but implement it
+their own way. Callers work with the base type or any subclass.
+
+Loop over a mixed list and call the same method — each object runs its
+version (Rectangle vs Circle).
+
+Use when behavior varies by type but call sites should stay simple
+(shapes, payment processors, serializers).
+
+Gotcha: base methods that `pass` or raise are placeholders — subclasses
+must override or callers get useless results.
+"""
+
 import math
 
 

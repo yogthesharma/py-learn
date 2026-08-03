@@ -1,3 +1,19 @@
+"""
+Lambda
+
+Anonymous one-expression functions: `lambda x: x ** 2`. Limited to a
+single expression — no statements or assignments.
+
+Common with `sorted(items, key=lambda x: x["marks"])` and similar
+`key=` callbacks.
+
+Use for tiny throwaway functions; prefer `def` when logic grows or you
+need a name for debugging.
+
+Gotcha: `sorted()` returns a new list; `.sort()` mutates in place —
+pick the one that matches whether you need the original preserved.
+"""
+
 # Challenge 1
 
 square = lambda number: number**2

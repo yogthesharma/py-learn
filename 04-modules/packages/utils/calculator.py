@@ -1,3 +1,10 @@
+"""
+Calculator submodule (packages lesson)
+
+Arithmetic helpers for the `utils` package. Same API as the flat
+`imports/calculator.py` — shows code reuse inside a package layout.
+"""
+
 def add(a, b):
     return a + b
 

@@ -1,3 +1,18 @@
+"""
+Classes
+
+A class defines data (attributes) and behavior (methods). `__init__` runs
+on construction; `self` refers to the instance being built.
+
+Methods take `self` as the first parameter. State lives on `self.attr`.
+
+Use classes when multiple values and operations belong together (a Car
+with brand, speed, start/stop/accelerate).
+
+Gotcha: forgetting `self.` creates a local variable, not an instance
+attribute — the object won't remember it.
+"""
+
 class Car:
     def __init__(self, brand, color, speed):
         self.brand = brand

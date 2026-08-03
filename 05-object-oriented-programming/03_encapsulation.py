@@ -1,3 +1,18 @@
+"""
+Encapsulation
+
+Hide internal state behind methods. Leading underscore (`_balance`) signals
+"private by convention" — Python does not enforce access.
+
+`@property` exposes read-only access without callers touching `_balance`
+directly. Validate in `deposit` / `withdraw`.
+
+Use when invariants matter (balances never negative, valid amounts only).
+
+Gotcha: `_name` is still reachable — encapsulation in Python is discipline,
+not a hard barrier.
+"""
+
 class BankAccount:
 
     def __init__(self, owner, balance=0):
